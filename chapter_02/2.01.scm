@@ -20,7 +20,6 @@
 
 (define (numer x) (car x))
 (define (denom x) (cdr x))
-
 (define (gcd a b)
   (if (= a b)
       a

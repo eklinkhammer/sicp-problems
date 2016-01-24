@@ -28,6 +28,8 @@
 ;; of times. Each church numeral, when called with a function, returns
 ;; a function that applies that function a certain number of
 ;; times. Therefore, if a is a church numeral, (a f) is the
-;; application of function f the value of the numeral times. 
+;; application of function f the value of the numeral times. Calling
+;; that applied function with a value returns a value that can be
+;; subsequently used by a church numeral. 
 (define (add-church m n)
   (lambda (f) (lambda (x) ((m f) ((n f) x)))))
