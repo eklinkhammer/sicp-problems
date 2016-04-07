@@ -17,4 +17,7 @@
 			     (cons (car s) x))
 			 rest)))))
 
+;; The complete list of subsets for a list consists of every possible
+;; way to make sublists without the first element, and then everyway
+;; to make those sublists but with the first element.
 (subsets (list 1 2))
